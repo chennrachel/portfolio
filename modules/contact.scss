@@ -7,8 +7,10 @@
     @include mixins.title-line (palette.$second-color);
     &__text {
         display: flex;
-        display: row;
         justify-content: space-between;
+        &--p {
+            padding: 0px 30px 20px 0px;
+        }
         &--a {
             font-size: 18px;
             &:visited {
@@ -23,7 +25,13 @@
                 color: palette.$third-color;
             }
             & i {
-                padding-right: 30px;
+                padding: 0px 30px 30px 0px;
+            }
+        }
+        @include mixins.screen-size (0, devices.$lg) {
+            flex-direction: column;
+            &--a {
+                padding: 25px;
             }
         }
     }
