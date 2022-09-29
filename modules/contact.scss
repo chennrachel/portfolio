@@ -29,9 +29,9 @@
             }
         }
         @include mixins.screen-size (0, devices.$lg) {
-            flex-direction: column;
+            flex-flow: column wrap;
             &--a {
-                padding: 25px;
+                padding: 20px 0px;
             }
         }
     }
