@@ -34,3 +34,12 @@
         font-size: $psize;
     }
 }
+
+@mixin title-line ($color){
+    &__h1::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: $color;
+    } 
+}

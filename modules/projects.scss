@@ -6,6 +6,7 @@
     @include mixins.section-style (palette.$bg-color-alt, palette.$second-color-alt, 40px, palette.$first-color-alt, 18px);
     display: flex;
     flex-flow: column wrap;
+    @include mixins.title-line (palette.$second-color-alt);
     &__container {
         display: flex;
         flex-flow: row wrap;

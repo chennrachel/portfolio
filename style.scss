@@ -25,12 +25,6 @@
             padding-bottom: 30px;
             display: flex;
             align-items: center;
-            &::after {
-                content: '';
-                flex: 1;
-                height: 1px;
-                background-color: palette.$first-color;
-            }
         }
         @include mixins.screen-size (0px, devices.$xs) {
             padding: 30px;

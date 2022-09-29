@@ -4,4 +4,5 @@
 
 .contact {
     @include mixins.section-style (palette.$bg-color, palette.$second-color, 40px, palette.$first-color, 18px);
+    @include mixins.title-line (palette.$second-color);
 }
