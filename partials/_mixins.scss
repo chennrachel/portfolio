@@ -1,0 +1,36 @@
+@use "./palette";
+
+@mixin screen-size ($minwidth, $maxwidth) {
+    @media only screen and (min-width: $minwidth) and (max-width: $maxwidth) {
+        @content;
+    }
+}
+
+@mixin home-image-prop ($widthvh, $heightvh, $pad) {
+    width: $widthvh;
+    height: $heightvh;
+    padding: $pad;
+}
+
+@mixin section-style ($bgcolor, $hcolor, $hsize, $pcolor, $psize) {
+    background-color: $bgcolor;
+    h1 {
+        color: $hcolor;
+        font-size: $hsize;
+    }
+    p {
+        color: $pcolor;
+        font-size: $psize;
+    }
+}
+
+@mixin title-para ($hcolor, $hsize, $pcolor, $psize) {
+    h1 {
+        color: $hcolor;
+        font-size: $hsize;
+    }
+    p {
+        color: $pcolor;
+        font-size: $psize;
+    }
+}

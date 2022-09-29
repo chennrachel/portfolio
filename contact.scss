@@ -1,7 +1,0 @@
-@use "../partials/palette";
-@use "../partials/mixins";
-@use "../partials/devices";
-
-.contact {
-    @include mixins.section-style (palette.$bg-color, palette.$second-color, 40px, palette.$first-color, 18px);
-}
