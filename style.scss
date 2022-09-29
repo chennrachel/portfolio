@@ -1,0 +1,51 @@
+@use "./partials/palette";
+@use "./partials/mixins";
+@use "./partials/devices";
+
+@use "./modules/nav.scss";
+@use "./modules/home.scss";
+@use "./modules/projects.scss";
+@use "./modules/skills.scss";
+@use "./modules/about.scss";
+@use "./modules/contact";
+
+* {
+    font-family: monospace;
+    margin: 0px;
+}
+
+.section {
+    width:100vw;    
+    margin-top:100vh;
+    z-index:600;
+    position:relative;
+    & > div {
+        padding: 110px;
+        h1 {
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+            &::after {
+                content: '';
+                flex: 1;
+                height: 1px;
+                background-color: palette.$first-color;
+            }
+        }
+        @include mixins.screen-size (0px, devices.$xs) {
+            padding: 30px;
+        }
+        @include mixins.screen-size (devices.$xs + 1px, devices.$sm) {
+            padding: 50px;
+        }
+        @include mixins.screen-size (devices.$sm  + 1px, devices.$md) {
+            padding: 70px;
+        }
+        @include mixins.screen-size (devices.$md + 1px, devices.$lg) {
+            padding: 90px;
+        }
+        @include mixins.screen-size (devices.$lg + 1px, devices.$xl) {
+            padding: 110px;
+        }
+    }
+}

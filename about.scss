@@ -1,0 +1,20 @@
+@use "../partials/mixins";
+@use "../partials/devices";
+@use "../partials/palette";
+
+.about {
+    @include mixins.section-style (palette.$bg-color-alt, palette.$second-color, 40px, palette.$bg-color, 18px);
+    &__container {
+        display: flex;
+        align-items: space-between;
+        &--img {
+            height: 250px;
+            border-radius: 50%;
+            padding-left: 30px;
+            @include mixins.screen-size (0, devices.$sm) {
+                height: 150px;
+                padding-left: 20px;
+            }
+        }  
+    }
+}

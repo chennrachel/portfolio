@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rachel Chen</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+</head>
+
+<nav id="nav" class="nav">
+    <!-- 3 line menu icon -->
+    <div class="icon" onclick="showHide(this)">
+        <div class="icon__line icon__line--top"></div>
+        <div class="icon__line icon__line--middle"></div>
+        <div class="icon__line icon__line--btm"></div>
+    </div>
+    <!-- link to pages -->
+    <div id="pages" class="pages" style="display: none">
+        <a onclick="smoothScroll(document.getElementById('home'))" class="pages__a">HOME</a>
+        <a onclick="smoothScroll(document.getElementById('projects'))" class="pages__a">PROJECTS</a>
+        <a onclick="smoothScroll(document.getElementById('skills'))" class="pages__a">SKILLS</a>
+        <a onclick="smoothScroll(document.getElementById('about'))" class="pages__a">ABOUT</a>
+        <a onclick="smoothScroll(document.getElementById('contact'))" class="pages__a">CONTACT</a>
+
+    </div>
+</nav>
+
+<body>
+    <div id="home" class="home">
+        <img class="home__img" src="./images/rc-small-3.jpg" />
+        <div class="home__text">
+            <h1 class="home__text--h1">Hi, I'm Rachel!</h1>
+            </br>
+            <p class="home__text--p">
+                I'm a <span style="color: #8bbed4">Junior Full-Stack Developer</span> based in <span style="color: #8bbed4">Sydney</span>.</br></br>
+                <button type="button" class="home__text--btn first" onclick="smoothScroll(document.getElementById('projects'))">Check out my work!</button>
+            </p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div id="projects" class="projects">
+            <h1 class="projects__h1">My projects </h1>
+            <p>I don't have any projects yet so here are some pictures of Nick Cage instead!</br></br></p>
+            <gallery class="projects__container">
+                <div class="projects__gallery projects__gallery1">
+                    <img class="projects__gallery--img" src="https://www.placecage.com/250/300"> 
+                    <p class="projects__gallery--p"><span>Project 1</span></p>
+                </div>
+                <div class="projects__gallery projects__gallery2">
+                    <img class="projects__gallery--img" src="https://www.placecage.com/250/300"> 
+                    <p class="projects__gallery--p"><span>Project 2</span></p>
+                </div>
+                <div class="projects__gallery project__gallery3">
+                    <img class="projects__gallery--img"src="https://www.placecage.com/250/300"> 
+                    <p class="projects__gallery--p"><span>Project 3</span></p>
+                </div>
+                <div class="projects__gallery projects__gallery4">
+                    <img class="projects__gallery--img" src="https://www.placecage.com/250/300"> 
+                    <p class="projects__gallery--p"><span>Project 4</span></p>
+                </div>
+                <div class="projects__gallery projects__gallery5">
+                    <img class="projects__gallery--img" src="https://www.placecage.com/250/300"> 
+                    <p class="projects__gallery--p"><span>Project 5</span></p>
+                </div>
+                <div class="projects__gallery projects__gallery6">
+                    <img class="projects__gallery--img" src="https://www.placecage.com/250/300"> 
+                    <p class="projects__gallery--p"><span>Project 6</span></p>
+                </div>
+            </gallery>
+        </div>
+
+        <div id="skills" class="skills">
+            <h1 class="skills__h1">Skills </h1>
+            <p>I'm currently learning these technologies/languages:</p>
+                <ul class="skills__ul">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS/Sass</li>
+                </ul>
+        </div>
+
+        <div id="about" class="about">
+                <h1 class="about__h1">About me </h1>
+                <div class="about__container">
+                    <p class="about__container--p">
+                    I started my career in Human Resources where I discovered a love for building and automating systems and processes based on human-centered design. 
+                    </br></br>
+                    I have a double degree in Science (Psychology) and Commerce (HR) and I'm now completing a full-stack consultanty program at _nology to learn how to code!
+                    </br></br></p>
+                    <img class="about__container--img" src="./images/twixy.jpg">
+                </div>  
+        </div>
+
+        <div id="contact" class="contact">
+            <h1 class="contact__h1">Get In Touch</h1>
+            <p class="contact__p">
+                My inbox is always open! Feel free to contact me via any of these platforms:
+                E: rachel.chenn94@gmail.com
+                GitHub:
+                LinkedIn:           
+            </p>    
+        </div>
+    </div>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
