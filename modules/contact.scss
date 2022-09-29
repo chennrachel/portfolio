@@ -5,20 +5,26 @@
 .contact {
     @include mixins.section-style (palette.$bg-color, palette.$second-color, 40px, palette.$first-color, 18px);
     @include mixins.title-line (palette.$second-color);
-}
-
-a {
-    &:link {
-        text-decoration: none;  
-        color: palette.$first-color;
+    &__text {
+        display: flex;
+        display: row;
+        justify-content: space-between;
+        &--a {
+            font-size: 18px;
+            &:visited {
+                text-decoration: none;  
+                color: palette.$first-color;
+            }
+            &:link {
+                text-decoration: none;  
+                color: palette.$first-color;
+            }
+            &:hover {
+                color: palette.$third-color;
+            }
+            & i {
+                padding-right: 30px;
+            }
+        }
     }
-}
-
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
 }

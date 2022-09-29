@@ -9,8 +9,8 @@
     @include mixins.title-line (palette.$second-color);
     &__ul {
         color: palette.$third-color;
-        font-size: 20px;
-        list-style-type: square; 
+        font-size: 24px;
+        list-style: none; 
         display: flex;
         justify-content: space-around;
         padding: 40px;

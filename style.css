@@ -307,8 +307,8 @@
 }
 .skills__ul {
   color: #8bbed4;
-  font-size: 20px;
-  list-style-type: square;
+  font-size: 24px;
+  list-style: none;
   display: flex;
   justify-content: space-around;
   padding: 40px;
@@ -380,14 +380,27 @@
   height: 1px;
   background-color: #fdb2b7;
 }
-
-a:link {
+.contact__text {
+  display: flex;
+  display: row;
+  justify-content: space-between;
+}
+.contact__text--a {
+  font-size: 18px;
+}
+.contact__text--a:visited {
   text-decoration: none;
   color: #9b9ba1;
 }
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+.contact__text--a:link {
+  text-decoration: none;
+  color: #9b9ba1;
+}
+.contact__text--a:hover {
+  color: #8bbed4;
+}
+.contact__text--a i {
+  padding-right: 30px;
 }
 
 * {
