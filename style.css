@@ -246,23 +246,23 @@
 }
 
 .projects {
-  background-color: #9b9ba1;
+  background-color: #50505c;
   display: flex;
   flex-flow: column wrap;
 }
 .projects h1 {
-  color: #b65061;
+  color: #ca7285;
   font-size: 40px;
 }
 .projects p {
-  color: #383844;
+  color: #201d1d;
   font-size: 18px;
 }
 .projects__h1::after {
   content: "";
   flex: 1;
   height: 1px;
-  background-color: #b65061;
+  background-color: #ca7285;
 }
 .projects__container {
   display: flex;
@@ -274,7 +274,7 @@
   text-align: center;
 }
 .projects__gallery--p span {
-  color: #383844;
+  color: #201d1d;
 }
 .projects__gallery:hover {
   cursor: pointer;
@@ -326,21 +326,21 @@
 }
 
 .about {
-  background-color: #9b9ba1;
+  background-color: #50505c;
 }
 .about h1 {
-  color: #b65061;
+  color: #ca7285;
   font-size: 40px;
 }
 .about p {
-  color: #323239;
+  color: #201d1d;
   font-size: 18px;
 }
 .about__h1::after {
   content: "";
   flex: 1;
   height: 1px;
-  background-color: #b65061;
+  background-color: #ca7285;
 }
 .about__container {
   display: flex;
