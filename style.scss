@@ -12,34 +12,35 @@
 * {
     font-family: monospace;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .section {
-    width:100vw;    
+    width: 100vw;    
     margin-top:100vh;
     z-index:600;
     position:relative;
     & > div {
-        padding: 110px;
+        padding: 100px 25vw;
         h1 {
             padding-bottom: 30px;
             display: flex;
             align-items: center;
         }
         @include mixins.screen-size (0px, devices.$xs) {
-            padding: 30px;
+            padding: 60px;
         }
         @include mixins.screen-size (devices.$xs + 1px, devices.$sm) {
-            padding: 50px;
+            padding: 100px;
         }
         @include mixins.screen-size (devices.$sm  + 1px, devices.$md) {
-            padding: 70px;
+            padding: 100px 150px;
         }
         @include mixins.screen-size (devices.$md + 1px, devices.$lg) {
-            padding: 90px;
+            padding: 100px 20vw;
         }
         @include mixins.screen-size (devices.$lg + 1px, devices.$xl) {
-            padding: 110px;
+            padding: 100px 20vw;
         }
     }
 }

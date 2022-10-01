@@ -9,18 +9,6 @@ function showHide(x) {
     }
 }
 
-// show/hide the menu when scrolling down/up
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("nav").style.top = "0";
-    } else {
-        document.getElementById("nav").style.top = "-300px";
-    }
-    prevScrollpos = currentScrollPos;
-};
-
 // smooth scroll link to other div's
 window.smoothScroll = function(target) {
     var scrollContainer = target;

@@ -15,7 +15,7 @@
     z-index:500;
     &__img {
         border-radius: 50%;
-        @include mixins.home-image-prop (50vh, 50vh, 45px);
+        @include mixins.home-image-prop (500px, 45px);
         }
     &__text {
         display: flex;
@@ -45,7 +45,7 @@
     @include mixins.screen-size(0px, devices.$xs) {
         flex-direction: column;
         &__img {
-            @include mixins.home-image-prop (32vh, 32vh, 0px);
+            @include mixins.home-image-prop (35vw, 0px);
             margin-bottom: 20px;
         }
         &__text {
@@ -64,7 +64,7 @@
      @include mixins.screen-size(devices.$xs + 1px, devices.$sm) {
         flex-direction: column;
         &__img {
-            @include mixins.home-image-prop (35vh, 35vh, 0px);
+            @include mixins.home-image-prop (40vw, 0px);
             margin-bottom: 30px;
         }
         &__text {
@@ -81,8 +81,9 @@
     }
     // resize md devices
     @include mixins.screen-size(devices.$sm + 1px, devices.$md) {
+        flex-direction: column;
         &__img {
-            @include mixins.home-image-prop (38vh, 38vh, 40px);
+            @include mixins.home-image-prop (37vw, 40px);
         }
         &__text {
             @include mixins.title-para (palette.$second-color, 50px, palette.$first-color, 22px);
@@ -96,7 +97,7 @@
     // resize lg devices
     @include mixins.screen-size(devices.$md + 1px, devices.$lg) {
         &__img {
-            @include mixins.home-image-prop (41vh, 41vh, 40px);
+            @include mixins.home-image-prop (40vw, 40px);
         }
         &__text {
             @include mixins.title-para (palette.$second-color, 55px, palette.$first-color, 24px);
@@ -110,7 +111,7 @@
     // resize xl devices
     @include mixins.screen-size(devices.$lg + 1px, devices.$xl) {
         &__img {
-            @include mixins.home-image-prop (45vh, 45vh, 45px);
+            @include mixins.home-image-prop (500px, 45px);
         }
         &__text {
             @include mixins.title-para (palette.$second-color, 60px, palette.$first-color, 26px);

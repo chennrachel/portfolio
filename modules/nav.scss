@@ -9,13 +9,14 @@
     right: 0;
     width: 100vw;
     display: block;
-    opacity: 80%;
     z-index: 900;
+    box-shadow: 0 4px 4px 0 #00000033;;
 
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
+    padding-right: 10px;
 
     @include mixins.screen-size(0px, devices.$sm) {
         flex-direction: column;
@@ -25,10 +26,10 @@
 
 .icon {
     cursor: pointer;
+    padding: 10px;
     &:hover > div {
         background-color: palette.$third-color;
     }
-
     &__line {
         width: 50px;
         height: 5px;
@@ -37,12 +38,13 @@
         transition: 0.2s;
         width: 60px;
         height: 6px;
+        border-radius: 10px;
     }
 }
     
 .change .icon__line{
     &--top {
-        transform: translate(0, 8px) rotate(-45deg);
+        transform: translate(0, 11px) rotate(-45deg);
     }        
 
     &--middle {
@@ -50,7 +52,7 @@
     }
     
     &--btm {
-        transform: translate(0px, -14px) rotate(45deg);
+        transform: translate(0px, -11px) rotate(45deg);
     }
 }
     

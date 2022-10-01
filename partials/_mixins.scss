@@ -6,9 +6,8 @@
     }
 }
 
-@mixin home-image-prop ($widthvh, $heightvh, $pad) {
-    width: $widthvh;
-    height: $heightvh;
+@mixin home-image-prop ($widthvw, $pad) {
+    width: $widthvw;
     padding: $pad;
 }
 
@@ -37,9 +36,10 @@
 
 @mixin title-line ($color){
     &__h1::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background-color: $color;
+        content: '';
+        flex: 1;
+        height: 1px;
+        margin: 0 10px;
+        background-color: $color
     } 
 }
