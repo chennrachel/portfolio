@@ -32,10 +32,14 @@
   height: 5px;
   background-color: #f4f7f7;
   margin: 6px 0;
-  transition: 0.2s;
   width: 60px;
   height: 6px;
   border-radius: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .icon__line {
+    width: 45px;
+  }
 }
 
 .change .icon__line--top {
@@ -363,9 +367,6 @@
 
 .about {
   background-color: #50505c;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 .about h1 {
   color: #fc8fac;
@@ -381,6 +382,11 @@
   height: 1px;
   margin: 0 10px;
   background-color: #fc8fac;
+}
+.about__container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .about__img {
   height: 200px;

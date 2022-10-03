@@ -35,10 +35,12 @@
         height: 5px;
         background-color: palette.$fourth-color;
         margin: 6px 0;
-        transition: 0.2s;
         width: 60px;
         height: 6px;
         border-radius: 10px;
+        @include mixins.screen-size(0px, devices.$xs) {
+            width: 45px;
+        }
     }
 }
     
