@@ -36,10 +36,7 @@
         @include mixins.screen-size (devices.$sm  + 1px, devices.$md) {
             padding: 100px 150px;
         }
-        @include mixins.screen-size (devices.$md + 1px, devices.$lg) {
-            padding: 100px 20vw;
-        }
-        @include mixins.screen-size (devices.$lg + 1px, devices.$xl) {
+        @include mixins.screen-size (devices.$md + 1px, devices.$xl) {
             padding: 100px 20vw;
         }
     }

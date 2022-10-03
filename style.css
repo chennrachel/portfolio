@@ -267,18 +267,47 @@
 }
 .projects__container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .projects__container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .projects__gallery {
-  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .projects__gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.projects__gallery b {
+  color: #8bbed4;
+}
+.projects__gallery--p {
+  width: 10vw;
+  padding: 7px;
   text-align: center;
 }
-.projects__gallery:hover {
-  cursor: pointer;
-  position: relative;
-  top: -10px;
-  font-weight: bold;
+@media only screen and (min-width: 0) and (max-width: 1200px) {
+  .projects__gallery--p {
+    width: 40vw;
+  }
+}
+.projects__gallery--p-links {
+  display: flex;
+  justify-content: center;
+}
+.projects__gallery img {
+  height: 300px;
+  width: 175px;
 }
 .projects__gallery img:hover {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
@@ -334,6 +363,9 @@
 
 .about {
   background-color: #50505c;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .about h1 {
   color: #fc8fac;
@@ -350,19 +382,14 @@
   margin: 0 10px;
   background-color: #fc8fac;
 }
-.about__container {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-.about__container--img {
+.about__img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   padding: 30px;
 }
 @media only screen and (min-width: 0) and (max-width: 768px) {
-  .about__container--img {
+  .about__img {
     height: 150px;
     width: 150px;
   }
@@ -397,7 +424,6 @@
   display: flex;
   align-items: center;
   font-size: 18px;
-  padding-right: 20px;
   padding-bottom: 20px;
 }
 .contact__links--a:visited {
@@ -412,7 +438,7 @@
   color: #8bbed4;
 }
 .contact__links--a i {
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 * {
@@ -450,12 +476,7 @@
     padding: 100px 150px;
   }
 }
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .section > div {
-    padding: 100px 20vw;
-  }
-}
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+@media only screen and (min-width: 993px) and (max-width: 1440px) {
   .section > div {
     padding: 100px 20vw;
   }

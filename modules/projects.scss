@@ -9,17 +9,40 @@
     @include mixins.title-line (palette.$second-color-alt);
     &__container {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include mixins.screen-size (0, devices.$xs) {
+            flex-direction: column;
+            justify-content: center;       
+        }
     }
     &__gallery {
-        padding: 30px;
-        text-align: center;
-        &:hover {
-            cursor: pointer;
-            position: relative;
-            top: -10px;
-            font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        @include mixins.screen-size (0, devices.$xs) {
+            flex-direction: column;
+            align-items: center;
+        }
+        & b {
+            color: palette.$third-color;
+        }
+        &--p {
+            width: 10vw;
+            padding: 7px;
+            text-align: center; 
+            @include mixins.screen-size (0, devices.$lg) {
+                width: 40vw;
+            }  
+        }
+        &--p-links {
+            display: flex;
+            justify-content: center;
+        }
+        & img {
+            height: 300px;
+            width: 175px;
         }
         & img:hover {
             box-shadow: 0 8px 8px 0 #00000033;
