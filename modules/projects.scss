@@ -29,11 +29,14 @@
             color: palette.$third-color;
         }
         &--p {
-            width: 10vw;
+            width: 14vw;
             padding: 7px;
             text-align: center; 
             @include mixins.screen-size (0, devices.$lg) {
                 width: 40vw;
+            }  
+            @include mixins.screen-size (devices.$lg + 1px, devices.$xl) {
+                width: 11vw;
             }  
         }
         &--p-links {
@@ -41,6 +44,7 @@
             justify-content: center;
         }
         & img {
+            padding: 10px;
             height: 300px;
             width: 175px;
         }

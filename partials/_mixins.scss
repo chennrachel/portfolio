@@ -8,6 +8,7 @@
 
 @mixin home-image-prop ($widthvw, $pad) {
     width: $widthvw;
+    height: width;
     padding: $pad;
 }
 
@@ -39,7 +40,7 @@
         content: '';
         flex: 1;
         height: 1px;
-        margin: 0 10px;
+        margin: 0 4px;
         background-color: $color
     } 
 }

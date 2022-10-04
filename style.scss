@@ -21,7 +21,7 @@
     z-index:600;
     position:relative;
     & > div {
-        padding: 100px 25vw;
+        padding: 100px 20vw;
         h1 {
             padding-bottom: 30px;
             display: flex;
@@ -31,13 +31,10 @@
             padding: 60px;
         }
         @include mixins.screen-size (devices.$xs + 1px, devices.$sm) {
-            padding: 100px;
+            padding: 80px;
         }
         @include mixins.screen-size (devices.$sm  + 1px, devices.$md) {
             padding: 100px 150px;
-        }
-        @include mixins.screen-size (devices.$md + 1px, devices.$xl) {
-            padding: 100px 20vw;
         }
     }
 }
