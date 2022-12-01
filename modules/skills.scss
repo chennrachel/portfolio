@@ -1,24 +1,31 @@
-@use "../partials/palette";
-@use "../partials/mixins";
-@use "../partials/devices";
+@use '../partials/palette';
+@use '../partials/mixins';
+@use '../partials/devices';
 
 .skills {
-    @include mixins.section-style (palette.$bg-color, palette.$second-color, 40px, palette.$first-color, 18px);
+    @include mixins.section-style(
+        palette.$bg-color,
+        palette.$second-color,
+        40px,
+        palette.$first-color,
+        18px
+    );
     display: flex;
     flex-flow: column wrap;
-    @include mixins.title-line (palette.$second-color);
+    @include mixins.title-line(palette.$second-color);
     &__ul {
         color: palette.$third-color;
         font-size: 24px;
-        list-style: none; 
+        list-style: none;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 40px;
         & li {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             & i {
-                padding-right: 10px;
+                padding-right: 20px;
             }
         }
         @include mixins.screen-size(0px, devices.$sm) {
@@ -28,7 +35,8 @@
             align-items: center;
             justify-content: space-around;
             & li {
-                padding: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
             }
         }
     }

@@ -11,12 +11,14 @@
     display: block;
     z-index: 900;
     box-shadow: 0 4px 4px 0 #00000033;;
-
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 5px;
-    padding-right: 10px;
+    & ul {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 5px;
+        padding-right: 10px;
+    }
+    
 
     @include mixins.screen-size(0px, devices.$sm) {
         flex-direction: column;

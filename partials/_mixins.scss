@@ -1,18 +1,18 @@
-@use "./palette";
+@use './palette';
 
-@mixin screen-size ($minwidth, $maxwidth) {
+@mixin screen-size($minwidth, $maxwidth) {
     @media only screen and (min-width: $minwidth) and (max-width: $maxwidth) {
         @content;
     }
 }
 
-@mixin home-image-prop ($widthvw, $pad) {
+@mixin home-image-prop($widthvw, $pad) {
     width: $widthvw;
     height: width;
     padding: $pad;
 }
 
-@mixin section-style ($bgcolor, $hcolor, $hsize, $pcolor, $psize) {
+@mixin section-style($bgcolor, $hcolor, $hsize, $pcolor, $psize) {
     background-color: $bgcolor;
     h1 {
         color: $hcolor;
@@ -24,7 +24,7 @@
     }
 }
 
-@mixin title-para ($hcolor, $hsize, $pcolor, $psize) {
+@mixin title-para($hcolor, $hsize, $pcolor, $psize) {
     h1 {
         color: $hcolor;
         font-size: $hsize;
@@ -35,12 +35,12 @@
     }
 }
 
-@mixin title-line ($color){
+@mixin title-line($color) {
     &__h1::after {
         content: '';
         flex: 1;
         height: 1px;
         margin: 0 4px;
-        background-color: $color
-    } 
+        background-color: $color;
+    }
 }
