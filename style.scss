@@ -30,11 +30,10 @@
 }
 
 .icon__line {
-    width: 50px;
     height: 5px;
     background-color: #f4f7f7;
     margin: 6px 0;
-    width: 60px;
+    width: 50px;
     height: 6px;
     border-radius: 10px;
 }
@@ -325,21 +324,17 @@
 }
 
 .projects__gallery--p {
-    width: 14vw;
+    width: 13vw;
     padding: 7px;
     text-align: center;
 }
 
-@media only screen and (min-width: 0) and (max-width: 1200px) {
+@media only screen and (min-width: 0) and (max-width: 1495px) {
     .projects__gallery--p {
         width: 40vw;
     }
 }
-@media only screen and (min-width: 1201px) and (max-width: 1440px) {
-    .projects__gallery--p {
-        width: 11vw;
-    }
-}
+
 .projects__gallery--p-links {
     display: flex;
     justify-content: center;
@@ -347,8 +342,8 @@
 
 .projects__gallery img {
     padding: 10px;
-    height: 300px;
-    width: 175px;
+    height: 240px;
+    width: 200px;
 }
 
 .projects__gallery img:hover {
@@ -384,6 +379,7 @@
     font-size: 24px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px;
 }
@@ -391,6 +387,7 @@
 .skills__ul li {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .skills__ul li i {
